@@ -23,6 +23,7 @@ export default {
 	},
 	data() {
 		return {
+			//SWAPI data
 			people: [],
 			page_id: 0,
 			total_people: 0,
@@ -41,7 +42,7 @@ export default {
 		handlePeople(response) {
 			//if OK
 			if (response.status == 200) {
-				//store people data
+				//store SWAPI data
 				this.people = response.data.people;
 				this.page_id = response.data.page_id;
 				this.total_people = response.data.total_people;
